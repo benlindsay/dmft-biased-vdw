@@ -258,10 +258,11 @@ void initialize_potential( ) {
       fftw_fwd( vir_funcpg[j][j2], vir_funcpg_hat[j][j2] ) ;
     }
 
-  //write_grid_data( "ug.dat" , uG ) ;
-  //write_grid_data( "up.dat" , uP ) ;
-  //write_grid_data( "upg.dat" , uPG ) ;
-  //write_grid_data( "uag.dat" , uAG ) ;
+  write_grid_data( "gammaP.dat" , gammaP ) ;
+  write_grid_data( "ug.dat" , uG ) ;
+  write_grid_data( "up.dat" , uP ) ;
+  write_grid_data( "upg.dat" , uPG ) ;
+  write_grid_data( "uag.dat" , uAG ) ;
 
 
   for ( j=0 ; j<Dim ; j++ ) {
